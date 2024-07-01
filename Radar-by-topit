@@ -1451,7 +1451,7 @@ do
                 -- Hovertext display 
                 if ( hoverPlayer == thisName ) then
                     local text = radarObjects.hoverText 
-                    text.Text = string.format('%s\n(%d метров)', thisManager.DisplayName, posDelta.Magnitude)
+                    text.Text = string.format('%s\n(%d метров)', thisManager.Name, posDelta.Magnitude)
                     text.Size = math.clamp(16 * RADAR_SCALE, 16, 24)
                     text.Visible = true
                     
